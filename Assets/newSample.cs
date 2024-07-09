@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class samplescript : MonoBehaviour
 {
-    public Rigidbody2D sampleRigidBody;
+    public Rigidbody2D rigidBody;
     public float jumpHeight;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -18,8 +18,8 @@ public class samplescript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) == true)
         {
-            sampleRigidBody.velocity = Vector2.up * jumpHeight;
+            rigidBody.velocity = Vector2.up * jumpHeight;
         }
-        
+
     }
-} 
+}
