@@ -12,7 +12,7 @@ public class ObstacleSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        spawnObject();
     }
 
     // Update is called once per frame
@@ -20,12 +20,21 @@ public class ObstacleSpawner : MonoBehaviour
     {
         if (timer < SpawnRate)
         {
-            timer += Time.deltaTime; 
-        }else
-        {
-            Instantiate(Obstacle, transform.position, transform.rotation);
-            timer = 0;
+            timer += Time.deltaTime;
         }
+
+        else
+        {
+            spawnObject();
+        }
+
+    }
+
+    void spawnObject()
+    {
+
+        Instantiate(Obstacle, transform.position, transform.rotation);
+        timer = 0;
 
     }
 }
