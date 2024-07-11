@@ -593,10 +593,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 608503458}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b253fe17683c4165a79fddac849be30, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a9d079da828d43ec90eacc47969b65b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sampleRigidBody: {fileID: 608503461}
+  rigidBody: {fileID: 608503461}
   jumpHeight: 7
 --- !u!1 &1186463203
 GameObject:
