@@ -41,5 +41,7 @@ public class ObstacleSpawner : MonoBehaviour
         Instantiate(Obstacle, new Vector3(transform.position.x, Random.Range(lowestPoint, highestPoint), 0), transform.rotation);
         timer = 0;
 
+
+
     }
 }

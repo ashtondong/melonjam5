@@ -6,6 +6,7 @@ public class ObstacleMoveScript : MonoBehaviour
 {
 
     public float moveSpeed = 5;
+    public float deadZone = -35;
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +18,12 @@ public class ObstacleMoveScript : MonoBehaviour
     void Update()
     {
         transform.position += (Vector3.left * moveSpeed) * Time.deltaTime;
+
+        if (transform.position.x < deadZone)
+        {
+            Debug.Log("obstacle deleted");
+            Destroy(gameObject);
+        }
         
     }
 }
