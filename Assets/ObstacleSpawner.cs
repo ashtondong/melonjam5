@@ -8,6 +8,8 @@ public class ObstacleSpawner : MonoBehaviour
     public GameObject Obstacle;
     public float SpawnRate = 2;
     private float timer = 0;
+    public float bottomheightOffset = 8;
+    public float topheightOffset = 13;
 
     // Start is called before the first frame update
     void Start()
@@ -33,7 +35,10 @@ public class ObstacleSpawner : MonoBehaviour
     void spawnObject()
     {
 
-        Instantiate(Obstacle, transform.position, transform.rotation);
+        float lowestPoint = transform.position.y - bottomheightOffset;
+        float highestPoint = transform.position.y + topheightOffset;
+
+        Instantiate(Obstacle, new Vector3(transform.position.x, Random.Range(lowestPoint, highestPoint), 0), transform.rotation);
         timer = 0;
 
     }
