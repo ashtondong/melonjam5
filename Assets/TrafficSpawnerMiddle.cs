@@ -5,7 +5,7 @@ using UnityEngine;
 public class TrafficSpawnerMiddle : MonoBehaviour
 {
     public GameObject trafficMiddle;
-    public float spawnRate = 3;
+    public float spawnRate = 0.8f;
     private float timer = 0;
 
     // Start is called before the first frame update
@@ -30,6 +30,6 @@ public class TrafficSpawnerMiddle : MonoBehaviour
     }
     void spawner()
     {
-        Instantiate(trafficMiddle, new Vector3(0, 0, 0), transform.rotation);
+        Instantiate(trafficMiddle, new Vector3(0, -5, 0), transform.rotation);
     }
 }
