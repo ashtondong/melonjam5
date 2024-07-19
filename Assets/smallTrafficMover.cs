@@ -5,6 +5,8 @@ using UnityEngine;
 public class smallTrafficMover : MonoBehaviour
 {
     public float moveSpeed = 5;
+    private float deadZone = -10;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,5 +17,11 @@ public class smallTrafficMover : MonoBehaviour
     void Update()
     {
         transform.position += (Vector3.down * moveSpeed) * Time.deltaTime;
+        if (transform.position.y < deadZone)
+        {
+            Debug.Log("small object destroyed");
+            Destroy(gameObject);
+        }
     }
+
 }
