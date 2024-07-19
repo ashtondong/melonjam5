@@ -30,6 +30,6 @@ public class TrafficSpawnerLeft : MonoBehaviour
     }
     void spawner()
     {
-        Instantiate(trafficLeft, new Vector3(-4,5,0), transform.rotation);
+        Instantiate(trafficLeft, new Vector3(-1,7,0), transform.rotation);
     }
 }
