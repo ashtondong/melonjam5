@@ -10,8 +10,8 @@ public class Timer : MonoBehaviour
 
     bool timerActive = false;
     float currentValue;
-    // Default start value is 5 seconds
-    public int startValue = 5;
+    // Default start value is 30 seconds
+    public int startValue = 30;
     public TMP_Text currentValueText;
     public PlayerMovement playerMovement;
     public GameEnd gameEnd;

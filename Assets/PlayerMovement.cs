@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody2D body;
     public float speed = 5;
+    public GameEnd gameEnd;
 
     // Start is called before the first frame update
     void Start()
@@ -23,5 +24,13 @@ public class PlayerMovement : MonoBehaviour
         body.velocity = direction * speed;
 
 
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Obstacle"))
+        {
+            gameEnd.gameOver();
+        }
     }
 }
