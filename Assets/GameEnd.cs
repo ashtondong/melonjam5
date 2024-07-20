@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class GameEnd : MonoBehaviour
 {
     public GameObject gameOverScreen;
+    public GameObject winnerScreen;   
     
     public void restartGame() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
@@ -14,6 +15,11 @@ public class GameEnd : MonoBehaviour
 
     public void gameOver() {
         gameOverScreen.SetActive(true);
+        Time.timeScale = 0;
     }
 
+    public void winner() {
+        winnerScreen.SetActive(true);
+        Time.timeScale = 0;
+    }
 }
