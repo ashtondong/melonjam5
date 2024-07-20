@@ -10,15 +10,17 @@ public class Timer : MonoBehaviour
 
     bool timerActive = false;
     float currentValue;
-    // Default start value is 30 seconds
-    public int startValue = 30;
+    // Default start value is 5 seconds
+    public int startValue = 5;
     public TMP_Text currentValueText;
     public PlayerMovement playerMovement;
+    public GameEnd gameEnd;
 
     // Start is called before the first frame update
     void Start()
     {
         currentValue = startValue;
+        currentValueText.text = currentValue.ToString("0");
     }
 
     // Update is called once per frame
@@ -34,6 +36,7 @@ public class Timer : MonoBehaviour
             if (currentValue <= 0) {
                 currentValue = 0;
                 StopTimer();
+                GameOver();
             }
 
             currentValueText.text = Mathf.CeilToInt(currentValue).ToString();
@@ -46,5 +49,10 @@ public class Timer : MonoBehaviour
 
     public void StopTimer() {
         timerActive = false;
-    }   
+    }
+
+    void GameOver()
+    {
+        gameEnd.gameOver();
+    }
 }
