@@ -1,17 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class WinnerTrigger : MonoBehaviour
-{
+public class WinnerTrigger : MonoBehaviour {
     public GameObject winnerScreen;
-    void OnTriggerEnter2D(Collider2D other)
-   {
-    if (other.CompareTag("Player"))
-    {
-        winnerScreen.SetActive(true);
-        Time.timeScale = 0;
-    }
+    private void OnTriggerEnter2D(Collider2D other) {
+        
+        // If the player has hit the right wall
+        if (other.CompareTag("Player")) {
+            
+            // Activates the winner screen
+            winnerScreen.SetActive(true);
+
+            // Pauses the game
+            Time.timeScale = 0;
+        }
    }
 }
