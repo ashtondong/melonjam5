@@ -36,8 +36,7 @@ public class Timer : MonoBehaviour
                 StopTimer();
             }
 
-            TimeSpan time = TimeSpan.FromSeconds(currentValue);
-            currentValueText.text = time.ToString(@"ss\:ff");
+            currentValueText.text = Mathf.CeilToInt(currentValue).ToString();
         }
     }
 
