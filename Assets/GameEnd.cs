@@ -10,6 +10,7 @@ public class GameEnd : MonoBehaviour
     public GameObject winnerScreen;   
     
     public void restartGame() {
+        Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
