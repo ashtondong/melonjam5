@@ -1052,7 +1052,7 @@ RectTransform:
   m_GameObject: {fileID: 593103060}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.42, y: 0.45, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1457823598}
@@ -1111,7 +1111,6 @@ GameObject:
   - component: {fileID: 598209091}
   - component: {fileID: 598209094}
   - component: {fileID: 598209093}
-  - component: {fileID: 598209092}
   m_Layer: 5
   m_Name: Timer
   m_TagString: Untagged
@@ -1138,22 +1137,6 @@ RectTransform:
   m_AnchoredPosition: {x: -814, y: 444}
   m_SizeDelta: {x: 180, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &598209092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 598209090}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1335230ea25845d8b5397aad868598a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startValue: 20
-  currentValueText: {fileID: 598209093}
-  playerMovement: {fileID: 1682143781}
-  gameEnd: {fileID: 1849859401}
 --- !u!114 &598209093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2433,9 +2416,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startValue: 30
-  currentValueText: {fileID: 0}
+  currentValueText: {fileID: 598209093}
   playerMovement: {fileID: 1682143781}
-  gameEnd: {fileID: 0}
+  gameEnd: {fileID: 1849859401}
 --- !u!1 &1940635786
 GameObject:
   m_ObjectHideFlags: 0
