@@ -2415,7 +2415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1335230ea25845d8b5397aad868598a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startValue: 30
+  startValue: 15
   currentValueText: {fileID: 598209093}
   playerMovement: {fileID: 1682143781}
   gameEnd: {fileID: 1849859401}
