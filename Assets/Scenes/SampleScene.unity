@@ -278,7 +278,7 @@ GameObject:
   - component: {fileID: 104950495}
   - component: {fileID: 104950494}
   m_Layer: 0
-  m_Name: Audio Source
+  m_Name: Traffic Sound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -294,11 +294,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 948c5856c7f6d46888d40c35fe901178, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d93d7156d77114c64a471a3211d81d8b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1052,8 +1052,8 @@ RectTransform:
   m_GameObject: {fileID: 593103060}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.45, y: 0.45, z: 0.45}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 0.42, y: 0.45, z: 0}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1457823598}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
