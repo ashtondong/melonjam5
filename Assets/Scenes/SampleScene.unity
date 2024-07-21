@@ -464,7 +464,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -1.5, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -475,7 +475,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 11}
+  m_Size: {x: 2, y: 11}
   m_EdgeRadius: 0
 --- !u!4 &410208544
 Transform:
@@ -1211,7 +1211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trafficLeft: {fileID: 5148603121560485521, guid: 96834cfaf70c24ff0ad10a3b8bb9494d, type: 3}
-  spawnRate: 0.8
+  spawnRate: 0.7
 --- !u!4 &883800349
 Transform:
   m_ObjectHideFlags: 0
@@ -1834,7 +1834,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   body: {fileID: 1682143779}
-  speed: 7
+  speed: 8
   gameEnd: {fileID: 1849859401}
 --- !u!61 &1682143782
 BoxCollider2D:
@@ -1948,7 +1948,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trafficMiddle: {fileID: 8242539066480221862, guid: f4ac6d43cf4a1461e8cf08ce34655bcc, type: 3}
-  spawnRate: 1
+  spawnRate: 0.8
 --- !u!4 &1806219583
 Transform:
   m_ObjectHideFlags: 0
@@ -2295,7 +2295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trafficRight: {fileID: 834060932755996426, guid: a2c22d892b497460e88a8104394f6850, type: 3}
-  spawnRate: 0.8
+  spawnRate: 0.7
 --- !u!4 &2123765356
 Transform:
   m_ObjectHideFlags: 0
