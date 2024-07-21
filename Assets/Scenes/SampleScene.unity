@@ -2219,7 +2219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   body: {fileID: 1682143779}
-  speed: 8
+  speed: 9
   gameEnd: {fileID: 1849859401}
 --- !u!61 &1682143782
 BoxCollider2D:
