@@ -6,8 +6,8 @@ public class Timer : MonoBehaviour
 
     bool timerActive = false;
     float currentValue;
-    // Timer set for 30 seconds
-    public int startValue = 30;
+    // Timer set for 20 seconds
+    public int startValue = 20;
     public TMP_Text currentValueText;
     public PlayerMovement playerMovement;
     public GameEnd gameEnd;
